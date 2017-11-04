@@ -1,0 +1,321 @@
+@font-face {
+    font-family: "Harry";
+    src: url("../font/harry.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Harry", sans-serif;
+    height: 100%;
+    background-image: url("../img/3.jpg");
+    background-size: cover;
+}
+
+input {
+    display: none;
+}
+input:checked + label {
+    box-shadow: 0 0 20px 5px black;
+}
+
+label:hover {
+    background-color: #d6d6d6;
+    cursor: pointer;
+}
+
+.skirt {
+    width: 67px;
+    height: 100px;
+    display: block;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.level {
+    width: 67px;
+    display: block;
+    border-radius: 4px;
+    margin: 15px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.another-icon {
+    background-image: url("../img/skin-icon.jpg");
+}
+.hogwarts-icon {
+    background-image: url("../img/hogwarts-icon.png");
+}
+.death-icon {
+    background-image: url("../img/death-icon.jpg");
+}
+
+.menu {
+    width: 180px;
+    min-width: 180px;
+    display: block;
+    float: left;
+}
+
+.menu-button {
+    font-family: "Harry", sans-serif;
+    position: relative;
+    display: block;
+    background-color: #75755D;
+    color: white;
+    padding: 16px 14px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 200px;
+    height: 60px;
+}
+
+.menu-button:hover {
+    font-family: "Harry", sans-serif;
+    background-color: #63634B;
+}
+
+.timer {
+    float: right;
+    width: 180px;
+    background-color: #75755D;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 8px;
+    height: 52px;
+}
+/****************/
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #1A1C17;
+    box-shadow: 5px 5px 5px #000000;
+    float: left;
+}
+
+.dropbtn {
+    font-family: "Harry", sans-serif;
+    background-color: #75755D;
+    color: white;
+    padding: 16px 14px;
+    border: none;
+    cursor: pointer;
+    width: 90px;
+    max-height: 60px;
+    height: 60px;
+    font-size: 21px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D0CC9D;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #63634B;
+}
+
+.desk {
+    margin: 0 auto;
+}
+
+/************** entire container, keeps perspective ********************/
+.flip-container {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 149px;
+    height: 221px;
+    position: relative;
+    perspective: 400px;
+    display: inline-block;
+}
+
+.card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 149px;
+    position: absolute;
+    border-radius: 25px;
+    backface-visibility: hidden;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.4s;
+    transform-style: preserve-3d;
+}
+
+.front {
+    box-shadow: 10px 10px 15px;
+}
+
+.back {
+    box-shadow: 10px 10px 15px;
+    transform: rotateY(180deg);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.gryffindor {
+    background-image: url("../img/gryffindor.png");
+}
+
+.hufflepuff {
+    background-image: url("../img/hufflepuff.png");
+}
+
+.ravenclaw {
+    background-image: url("../img/ravenclaw.png");
+}
+
+.slytherin {
+    background-image: url("../img/slytherin.png");
+}
+
+.hogwarts{
+    background-image: url("../img/hogwarts.png");
+}
+
+.skin {
+    background-image: url("../img/skin.jpg");
+}
+
+.death {
+    background-image: url("../img/death.jpg");
+}
+/*****************************************************************************/
+
+.button-music {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url("../img/playButton.png");
+}
+
+.button-music:hover {
+    box-shadow: inset 0 0 20px 5px black;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+    animation: fade .6s;
+    overflow: auto;
+}
+
+.popup {
+    text-align: center;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 85%;
+    min-width: 320px;
+    max-width: 600px;
+    position: absolute;
+    padding: 15px 20px;
+    border: 1px solid #383838;
+    background: #D0CC9D;
+    z-index: 2;
+    border-radius: 4px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: "Harry", sans-serif;
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    animation: fade .6s;
+}
+
+.popup h2, .popup p {
+    margin-bottom: 25px;
+}
+
+.close {
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline: none;
+
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    transition: all 0.5s;
+}
+
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+}
+
+@keyframes hideThat {
+    0% {
+        height: inherit;
+        opacity: 1;
+        visibility: visible;
+    }
+    99% {
+        height: inherit;
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+}

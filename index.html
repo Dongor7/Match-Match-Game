@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu">
+            <div class="dropdown">
+                <button class="dropbtn">Skirt</button>
+                <div class="dropdown-content">
+                    <input type='radio' value='death' name='frontSide' id='skirt-death' checked/>
+                    <label class="skirt death-icon" for='skirt-death'></label>
+
+                    <input type='radio' value='hogwarts' name='frontSide' id='skirt-hogwarts'/>
+                    <label class="skirt hogwarts-icon" for='skirt-hogwarts'></label>
+
+                    <input type='radio' value='skin' name='frontSide'  id='skirt-another'/>
+                    <label class="skirt another-icon" for='skirt-another'></label>
+                </div>
+            </div
+            ><div class="dropdown">
+                <button class="dropbtn">Level</button>
+                <div class="dropdown-content">
+                    <input type='radio' value='8' name='level' id='level-easy' checked/>
+                    <label class="level" for='level-easy'>Easy</label>
+
+                    <input type='radio' value='16' name='level' id='level-medium'/>
+                    <label class="level" for='level-medium'>Medium</label>
+
+                    <input type='radio' value='24' name='level' id='level-hard'/>
+                    <label class="level" for='level-hard'>Hard</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="timer">
+            <p class="timer-output">00 : 00</p>
+        </div>
+
+        <button class="menu-button" onclick="Game.startNewGame()">Start Game</button>
+    </header>
+
+    <div class="content">
+        <div class="overlay">
+            <div class="popup">
+                <h2>Game rules</h2>
+                <p>
+                    Your goal is to find all pairs of cards in the shortest time...
+                </p>
+                <p>
+                    Good luck!
+                </p>
+
+                <button class="close" title='Закрыть' onclick="document.querySelector('.overlay').style.display='none';"></button>
+            </div>
+        </div>
+
+        <audio class="music" src="sound/John Williams – Theme.mp3" loop></audio>
+        <div class="button-music" onclick="Game.musicStop()"></div>
+    </div>
+
+    <script src="js/Game.js"></script>
+    <script src="js/Desk.js"></script>
+    <script src="js/Card.js"></script>
+
+</body>
+</html>
