@@ -28,14 +28,13 @@ class Desk{
                 let time = Game.timerStop();
                 setTimeout(function () {
                     let h2 = document.querySelector('.popup h2'),
-                        p = document.querySelector('.popup p'),
-                        pp = document.querySelectorAll('.popup p')[1];
+                        [p1, p2] = document.querySelectorAll('.popup p');
 
                     h2.innerHTML = "";
                     h2.innerHTML = "You won!";
-                    p.innerHTML = "";
-                    p.innerHTML = "Your time is " + time;
-                    pp.innerHTML = "";
+                    p1.innerHTML = "";
+                    p1.innerHTML = "Your time is " + time;
+                    p2.innerHTML = "";
 
                     document.querySelector('.overlay').style.display='block'
                 }, 1500)

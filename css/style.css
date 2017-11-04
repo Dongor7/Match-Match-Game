@@ -47,7 +47,7 @@ label:hover {
     border-radius: 4px;
     margin: 15px;
     padding-left: 5px;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .another-icon {
@@ -74,7 +74,7 @@ label:hover {
     background-color: #75755D;
     color: white;
     padding: 16px 14px;
-    font-size: 25px;
+    font-size: 33px;
     letter-spacing: 2px;
     word-spacing: 5px;
     border: none;
@@ -118,7 +118,7 @@ label:hover {
     width: 90px;
     max-height: 60px;
     height: 60px;
-    font-size: 21px;
+    font-size: 27px;
 }
 
 .dropdown {
@@ -261,7 +261,7 @@ label:hover {
     background: #D0CC9D;
     z-index: 2;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: 35px;
     letter-spacing: 1px;
     word-spacing: 2px;
     font-family: "Harry", sans-serif;
