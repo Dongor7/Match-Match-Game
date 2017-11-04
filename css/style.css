@@ -220,8 +220,8 @@ label:hover {
 
 .button-music {
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    top: 10%;
+    right: 3%;
     height: 50px;
     width: 50px;
     border-radius: 50%;
