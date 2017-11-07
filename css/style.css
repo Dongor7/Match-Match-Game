@@ -16,7 +16,6 @@ html {
 
 body {
     font-family: "Harry", sans-serif;
-    height: 100%;
     background-image: url("../img/3.jpg");
     background-size: cover;
 }
@@ -25,14 +24,12 @@ input {
     display: none;
 }
 input:checked + label {
-    box-shadow: 0 0 20px 5px black;
+    box-shadow: 0 0 20px 5px #000000;
 }
-
 label:hover {
     background-color: #d6d6d6;
     cursor: pointer;
 }
-
 .skirt {
     width: 67px;
     height: 100px;
@@ -40,7 +37,6 @@ label:hover {
     border-radius: 10px;
     margin: 15px;
 }
-
 .level {
     width: 67px;
     display: block;
@@ -49,7 +45,6 @@ label:hover {
     padding-left: 5px;
     font-size: 25px;
 }
-
 .another-icon {
     background-image: url("../img/skin-icon.jpg");
 }
@@ -99,7 +94,7 @@ label:hover {
     padding-top: 8px;
     height: 52px;
 }
-/****************/
+
 .header {
     width: 100%;
     height: 60px;
@@ -230,7 +225,7 @@ label:hover {
 }
 
 .button-music:hover {
-    box-shadow: inset 0 0 20px 5px black;
+    box-shadow: inset 0 0 20px 5px #000000;
     transition: box-shadow 0.2s ease-in;
 }
 
@@ -265,7 +260,6 @@ label:hover {
     font-size: 35px;
     letter-spacing: 1px;
     word-spacing: 2px;
-    font-family: "Harry", sans-serif;
     box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
     animation: fade .6s;
 }
@@ -274,7 +268,7 @@ label:hover {
     margin-bottom: 25px;
 }
 
-.close {
+.close-button {
     top: 10px;
     right: 10px;
     width: 32px;
@@ -288,7 +282,7 @@ label:hover {
     outline: none;
 
 }
-.close:before {
+.close-button:before {
     color: rgba(255, 255, 255, 0.9);
     content: "X";
     font-family:  Arial, Helvetica, sans-serif;
@@ -299,7 +293,7 @@ label:hover {
     transition: all 0.5s;
 }
 
-.close:hover {
+.close-button:hover {
     background-color: rgba(252, 20, 0, 0.8);
 }
 

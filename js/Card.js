@@ -1,6 +1,3 @@
-let count = 0;
-let countCards = 0;
-
 class Card{
 
     constructor(backSide, frontSide){
@@ -32,8 +29,9 @@ class Card{
     }
 
     static shuffle(cards){
-        let currentIndex = cards.length, temporaryValue, randomIndex;
-        countCards = cards.length;
+        let currentIndex = cards.length,
+            temporaryValue,
+            randomIndex;
 
         while (0 !== currentIndex) {
 
@@ -58,8 +56,6 @@ class Card{
             if(items.length === 2){
 
                 if(items[0].firstChild.classList[1] === items[1].firstChild.classList[1]) {
-
-                    count++;
 
                     items[0].style.animation = "hideThat 2s forwards";
                     items[0].classList.add("hide");

@@ -46,25 +46,17 @@
     </header>
 
     <div class="content">
-
         <audio class="music" src="sound/John Williams – Theme.mp3" autoplay loop></audio>
         <div class="button-music" onclick="Game.musicStop()"></div>
 
         <div class="overlay">
             <div class="popup">
                 <h2>Game rules</h2>
-                <p>
-                    Your goal is to find all pairs of cards in the shortest time...
-                </p>
-                <p>
-                    Good luck!
-                </p>
-
-                <button class="close" title='Закрыть' onclick="document.querySelector('.overlay').style.display='none';"></button>
+                <p>Your goal is to find all pairs of cards in the shortest time...</p>
+                <p>Good luck!</p>
+                <button class="close-button" title='Закрыть' onclick="document.querySelector('.overlay').style.display='none';"></button>
             </div>
         </div>
-
-
     </div>
 
     <script src="js/Game.js"></script>

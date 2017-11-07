@@ -73,9 +73,9 @@ class Game {
                 this.isPlay = true;
                 this.audio.pause();
             }
-        }
+    }
 }
 
- setTimeout("document.querySelector('.overlay').style.display='block'", 0);
+setTimeout("document.querySelector('.overlay').style.display='block'", 0);
 
 
